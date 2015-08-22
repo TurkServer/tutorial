@@ -1,0 +1,29 @@
+<template name="home">
+  <head>
+    <title>demo</title>
+  </head>
+
+  <body>
+    <h1>Welcome to Meteor!</h1>
+
+    {{> hello}}
+  </body>
+</template>
+
+<template name="hello">
+  <button id="clickMe">Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+
+  <button id="exitSurvey">Exit Survey</button>
+</template>
+
+<template name="survey">
+  <form class="survey">
+    <p>Was there anything confusing about this HIT?</p>
+    <textarea name="confusing" rows="3"></textarea><br/>
+    <p>Do you have any feedback for us?</p>
+    <textarea name="feedback" rows="3"></textarea><br/>
+    <button type="submit">Submit the HIT</button>
+  </form>
+</template>
+
