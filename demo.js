@@ -23,7 +23,7 @@ if (Meteor.isClient) {
 
     Template.hello.events({
 	'click button#clickMe': function () {
-	    Meteor.call('incClicks')
+	    Meteor.call('incClicks');
 	}
     });
 
@@ -35,8 +35,9 @@ if (Meteor.isClient) {
 
     Template.survey.events({
 	'submit .survey': function (e) {
+	    e.preventDefault();
 	    var results = {confusing: e.target.confusing.value,
-			   feedback: e.target.feedback.value}
+			   feedback: e.target.feedback.value};
 	    TurkServer.submitExitSurvey(results);
 	}
     });
@@ -52,7 +53,8 @@ if (Meteor.isServer) {
     });
 
     TurkServer.initialize(function() {
-	Clicks.insert({count: 0});
+	var clickObj = {count: 0};
+	Clicks.insert(clickObj);
     });
 
     Meteor.publish('clicks', function() {
