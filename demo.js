@@ -2,7 +2,7 @@ if (Meteor.isClient) {
     
     Tracker.autorun(function() {
 	if (TurkServer.inExperiment()) {
-	    Router.go('/');
+	    Router.go('/experiment');
 	} else if (TurkServer.inExitSurvey()) {
 	    Router.go('/survey');
 	}
