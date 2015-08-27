@@ -16,7 +16,8 @@ if (Meteor.isClient) {
 
     Template.hello.helpers({
 	counter: function () {
-	    return Clicks.findOne().count;
+	    var clickObj = Clicks.findOne();
+	    return clickObj && clickObj.count;
 	}
     });
 
@@ -45,7 +46,7 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
 
     Meteor.startup(function () {
-	Batches.upsert({name: "main", active: true});
+	Batches.upsert({name: "main"}, {name: "main", active: true});
 	var batch = TurkServer.Batch.getBatchByName("main");
 	batch.setAssigner(new TurkServer.Assigners.SimpleAssigner);
     });
