@@ -1,12 +1,12 @@
 {
     "turkserver": {
-	"adminPassword": "",
+	"adminPassword": "password",
 	"mturk": {
 	    "sandbox": true,
 	    "accessKeyId": "",
 	    "secretAccessKey": "",
 	    "externalUrl": "",
-	    "frameHeight": 
+	    "frameHeight": 800
 	}
     }
 }
