@@ -1,6 +1,11 @@
 {
     "turkserver": {
 	"adminPassword": "password",
+	"experiment": {
+	    "limit": {
+		"batch": 100
+	    }
+	},
 	"mturk": {
 	    "sandbox": true,
 	    "accessKeyId": "",
