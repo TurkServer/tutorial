@@ -1,17 +1,18 @@
-# Virtual Lab tutorial
+# TurkServer tutorial
 
 A tutorial project for
 [TurkServer](https://github.com/HarvardEconCS/turkserver-meteor), a
 framework for building online, real-time user experiments using the
 JavaScript app platform [Meteor](https://www.meteor.com/).
 
-The master branch of this repo contains the project that you build
-during the tutorial. The tutorial itself is in the gh-pages branch and
-can be found [here](https://virtuallab.github.io/).
+This repo contains the project that you build during the tutorial. The
+tutorial itself can be found [here][tutorial].
+
+[tutorial]: http://turkserver.readthedocs.io/en/latest/examples/tutorial.html
 
 To clone this repo, use the following command to grab the TurkServer
-submodule in packages/mizzao:turkserver:
+submodule in `packages`:
 
 ```
-git clone --recursive https://github.com/VirtualLab/tutorial.git
+git clone --recursive https://github.com/TurkServer/tutorial.git
 ```
