@@ -1,7 +1,7 @@
 # TurkServer tutorial
 
 A tutorial project for
-[TurkServer](https://github.com/HarvardEconCS/turkserver-meteor), a
+[TurkServer](https://github.com/TurkServer/turkserver-meteor), a
 framework for building online, real-time user experiments using the
 JavaScript app platform [Meteor](https://www.meteor.com/).
 
@@ -10,9 +10,8 @@ tutorial itself can be found [here][tutorial].
 
 [tutorial]: http://turkserver.readthedocs.io/en/latest/examples/tutorial.html
 
-To clone this repo, use the following command to grab the TurkServer
-submodule in `packages`:
+Clone this repo with the following:
 
 ```
-git clone --recursive https://github.com/TurkServer/tutorial.git
+git clone https://github.com/TurkServer/tutorial.git
 ```
